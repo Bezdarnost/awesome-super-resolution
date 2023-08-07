@@ -30,7 +30,8 @@ Perceptual Loss, often referred to as feature loss or content loss, is designed 
 
 **Formula:**
 
-$PerceptualLoss=\frac{1}{W{\times}H{\times}C}\sum_{i=1}^W$
+$\text{PerceptualLoss} = \frac{1}{W \times H \times C} \sum_{i=1}^{W} \sum_{j=1}^{H} \sum_{k=1}^{C} (F_{ijk}^{\text{target}} - F_{ijk}^{\text{generated}})^2$
+
 
 
 Where:
