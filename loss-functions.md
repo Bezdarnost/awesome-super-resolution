@@ -129,13 +129,24 @@ $$\ \text{SSIM} = \frac{(2\mu_x\mu_y+c_1)(2\sigma_{xy}+c_2)}{(\mu_x^2+\mu_y^2+c_
 
 - $\ \mu_x$ and $\ \mu_y$ are the average of images $\ x$ and $\ y$.
 - $\ \sigma_x^2$ and $\ \sigma_y^2$ are the variances of images $\ x$ and $\ y$.
-- $\ \sigma_{xy}$ is the covaioance of $\ x$ and $\ y$.
+- $\ \sigma_{xy}$ is the covariance of $\ x$ and $\ y$.
 - $\ c_1$ and $\ c_2$ are constants to avoid division by zero.
 
 **Characteristics:**
 
 - Evaluates structural and perceptual differences.
 - More aligned with human visual perception compared to pixel-wise losses.
+
+---
+  
+</details>
+
+<details>
+<summary></summary>
+
+---
+
+**Definition:**
 
 ---
   
