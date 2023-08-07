@@ -85,7 +85,7 @@ $$\ \text{MSE} = \frac{1}{N} \sum_{i=1}^N(y_i−\hat{y}_i)^2 $$
 </details>
 
 <details>
-<summary>Mean Absolute Error (MAR) or L1 Loss</summary>
+<summary>Mean Absolute Error (MAE) or L1 Loss</summary>
 
 ---
 
