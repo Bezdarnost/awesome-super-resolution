@@ -141,4 +141,74 @@ year={2022}
       
 </details>
 
+<details>
+<summary>BSRGAN: Designing a Practical Degradation Model for Deep Blind Image Super-Resolution (03.2021)</summary>
 
+---
+
+**Date of Introduction:**
+
+- March 14, 2021 (arXiv:2103.14006v2 [eess.IV] 30 Sep 2021)
+
+**Conference/Publication:**
+
+- ICCV 2021
+
+**Authors:**
+
+- Kai Zhang, Jingyun Liang, Luc Van Gool, Radu Timofte
+
+**Abstract/Description:**
+
+- The paper emphasizes the importance of the degradation model in single image super-resolution (SISR) methods. Existing models may not perform well if the assumed degradation deviates from real images. The authors propose a more complex but practical degradation model that considers randomly shuffled blur, downsampling, and noise degradations. This model aims to cover the diverse degradations of real images. The paper also introduces a deep blind ESRGAN super-resolver trained with this degradation model, demonstrating its effectiveness in real SISR applications.
+
+**Main Concepts:**
+
+- Importance of the degradation model in SISR methods.
+- Challenges with existing SISR methods and their assumptions.
+- Introduction of a new degradation model that considers diverse degradations of real images.
+
+**Architecture & Methods:**
+
+- Degradation Model: The proposed model considers blur (approximated by two convolutions with isotropic and anisotropic Gaussian kernels), downsampling (chosen from nearest, bilinear, and bicubic interpolations), and noise (Gaussian noise, JPEG compression, and camera sensor noise).
+- Random Shuffle Strategy: Instead of the traditional blur/downsampling/noise-addition pipeline, the authors propose a random shuffle strategy for these degradations.
+- Deep Blind ESRGAN: A super-resolver trained using the new degradation model.
+
+**Training Details:**
+
+- The paper highlights the use of the new degradation model to synthesize realistic LR images from HR images, providing unlimited paired LR/HR training data without misalignment issues.
+
+**Metrics:**
+
+- Specific metrics are not mentioned in the summary, but the paper likely uses standard SISR metrics.
+
+**Datasets:**
+
+- The degradation model is designed to be applicable to real images with diverse degradations. Specific dataset names are not provided in the summary.
+
+**Results & Achievements:**
+
+- The proposed degradation model improves the practicability of deep super-resolvers, making them more applicable to real SISR tasks.
+
+**Code/Implementation:**
+
+- The source code is available at [BSRGAN GitHub Repository](https://github.com/cszn/BSRGAN).
+
+**References:**
+
+- [paper](https://arxiv.org/pdf/2103.14006.pdf)
+- [github](https://github.com/cszn/BSRGAN)
+
+```
+@inproceedings{zhang2021designing,
+    title={Designing a Practical Degradation Model for Deep Blind Image Super-Resolution},
+    author={Zhang, Kai and Liang, Jingyun and Van Gool, Luc and Timofte, Radu},
+    booktitle={IEEE International Conference on Computer Vision},
+    pages={4791--4800},
+    year={2021}
+}
+```
+
+---
+      
+</details>
