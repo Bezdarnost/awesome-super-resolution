@@ -89,7 +89,7 @@
 
 **Abstract/Description:**
 
- -The paper introduces an efficient diffusion model for image restoration (DiffIR). Traditional diffusion models require many iterations and computational resources to generate accurate images or latent feature maps. While these models perform well in image synthesis, applying them directly to image restoration can be inefficient. DiffIR addresses this by using a diffusion model to estimate a compact image restoration prior representation (IPR) to guide the network in restoring images. This approach reduces the model size and iteration count, leading to more accurate estimations compared to traditional diffusion models.
+ - The paper introduces an efficient diffusion model for image restoration (DiffIR). Traditional diffusion models require many iterations and computational resources to generate accurate images or latent feature maps. While these models perform well in image synthesis, applying them directly to image restoration can be inefficient. DiffIR addresses this by using a diffusion model to estimate a compact image restoration prior representation (IPR) to guide the network in restoring images. This approach reduces the model size and iteration count, leading to more accurate estimations compared to traditional diffusion models.
 
 **Main Concepts:**
 
@@ -127,11 +127,13 @@
 - [paper](https://arxiv.org/pdf/2303.09472.pdf)
 - [github](https://github.com/Zj-BinXia/DiffIR)
 
+```
 @article{diffir2023efficient,
     title={DiffIR: An Efficient Diffusion Model for Image Restoration},
     journal={arXiv preprint},
     year={2023}
 }
+```
 
 ---
 
