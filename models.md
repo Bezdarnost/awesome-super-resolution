@@ -71,6 +71,76 @@
 </details>
 
 <details>
+<summary>KDSRGAN: Knowledge Distillation Based Degradation Estimation for Blind Super-Resolution (02.2023)</summary>
+
+---
+
+**Date of Introduction:**
+
+- February 16, 2023
+  
+**Conference/Publication:**
+
+- ICLR 2023
+
+**Authors:**
+
+- Bin Xia, Yulun Zhang, Yitong Wang, Yapeng Tian, Wenming Yang, Radu Timofte, Luc Van Gool
+  
+**Abstract/Description:**
+
+- The paper addresses the challenge of blind image super-resolution (Blind-SR), which aims to recover a high-resolution (HR) image from a low-resolution (LR) image with unknown degradations. Traditional methods often rely on explicit degradation estimators for specific degradation processes, making them less adaptable to different degradation types. This work introduces the Knowledge Distillation based Blind-SR network (KDSR) that leverages an implicit degradation estimator to extract degradation representation without needing ground-truth degradation supervision. The proposed method achieves state-of-the-art performance and can adapt to various degradation processes.
+
+**Main Concepts:**
+
+- The significance of degradation models in Blind-SR.
+- The limitations of explicit degradation estimators in traditional Blind-SR methods.
+- The introduction of an implicit degradation representation (IDR) learning framework for Blind-SR.
+
+**Architecture & Methods:**
+
+- KD-IDE (Knowledge Distillation based Implicit Degradation Estimator): An estimator that predicts accurate implicit degradation representation (IDR) without relying on ground-truth degradation.
+- IDR-DCRB (IDR-based Dynamic Convolution Residual Blocks): An efficient SR network designed to utilize the IDR for super-resolution.
+
+**Training Details:**
+
+- The KDSR model involves a two-stage training process. Initially, a teacher network is trained with paired HR and LR images. Subsequently, a student network is trained to extract the same IDR as the teacher network from LR images directly.
+
+**Metrics:**
+
+- While specific metrics are not detailed in the provided summary, the paper likely employs standard super-resolution evaluation metrics.
+
+**Datasets:**
+
+- The exact datasets used are not specified in the summary, but given the context, diverse datasets representing various degradation types are likely used.
+
+**Results & Achievements:**
+
+- KDSR demonstrates superior performance in different degradation settings, from simple to complex, showcasing its adaptability and effectiveness.
+
+**Code/Implementation:**
+
+- The source code is available at [KDSR GitHub Repository](https://github.com/Zj-BinXia/KDSR).
+
+**References:**
+
+- [paper](https://arxiv.org/pdf/2211.16928.pdf)
+- [github](https://github.com/Zj-BinXia/KDSR)
+
+```
+@InProceedings{xia2022knowledge,
+  title={Knowledge Distillation based Degradation Estimation for Blind Super-Resolution},
+  author={Xia, Bin and Zhang, Yulun and Wang, Yitong and Tian, Yapeng and Yang, Wenming and Timofte, Radu and Van Gool, Luc},
+  journal={ICLR},
+  year={2023}
+}
+```
+
+---
+      
+</details>
+
+<details>
 <summary>SCUNet: Practical Blind Denoising via Swin-Conv-UNet and Data Synthesis (03.2022)</summary>
 
 ---
