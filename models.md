@@ -71,6 +71,73 @@
 </details>
 
 <details>
+<summary>DiffIR: An Efficient Diffusion Model for Image Restoration (03.2023)</summary>
+
+---
+      
+**Date of Introduction:**
+
+- March 2023
+
+**Conference/Publication:**
+
+- ArXiv (preprint)
+
+**Authors:**
+
+- Bin Xia, Yulun Zhang, Shiyin Wang, Yitong Wang, Xinglong Wu, Yapeng Tian, Wenming Yang, and Luc Van Gool 2
+
+**Abstract/Description:**
+
+ -The paper introduces an efficient diffusion model for image restoration (DiffIR). Traditional diffusion models require many iterations and computational resources to generate accurate images or latent feature maps. While these models perform well in image synthesis, applying them directly to image restoration can be inefficient. DiffIR addresses this by using a diffusion model to estimate a compact image restoration prior representation (IPR) to guide the network in restoring images. This approach reduces the model size and iteration count, leading to more accurate estimations compared to traditional diffusion models.
+
+**Main Concepts:**
+
+- The inefficiency of traditional diffusion models when applied directly to image restoration.
+- Introduction of DiffIR, which uses a diffusion model to estimate a compact IPR to guide image restoration.
+- The potential of DiffIR to reduce model size and iteration count, leading to more accurate estimations.
+
+**Architecture & Methods:**
+
+- Compact IR Prior Extraction Network (CPEN): Extracts a compact IR prior representation (IPR) from ground-truth images.
+- Dynamic IRformer (DIRformer): Uses the extracted IPR to restore low-quality images. It consists of dynamic transformer blocks in a U-net shape. These blocks include dynamic multi-head transposed attention (DMTA) and dynamic gated feed-forward network (DGFN), which use the IPR as dynamic modulation parameters to add restoration details into feature maps.
+
+**Training Details:**
+
+- DiffIR is trained in two stages: pretraining and training the diffusion model. In pretraining, the CPEN and DIRformer are trained together using ground-truth and low-quality images. In the second stage, the diffusion model is trained to estimate the IPR directly from low-quality images.
+
+**Metrics:**
+
+- Specific metrics are not mentioned in the provided text, but the paper likely uses standard image restoration metrics.
+
+**Datasets:**
+
+- Specific dataset names are not provided in the summary, but the paper likely uses datasets relevant to image restoration tasks.
+
+**Results & Achievements:**
+
+- DiffIR is presented as a more efficient alternative to traditional diffusion models for image restoration. It achieves high-quality restoration results with reduced computational resources.
+
+**Code/Implementation:**
+
+- The source code is available at [DiffIR GitHub Repository](https://github.com/Zj-BinXia/DiffIR).
+
+**References:**
+
+- [paper](https://arxiv.org/pdf/2303.09472.pdf)
+- [github](https://github.com/Zj-BinXia/DiffIR)
+
+@article{diffir2023efficient,
+    title={DiffIR: An Efficient Diffusion Model for Image Restoration},
+    journal={arXiv preprint},
+    year={2023}
+}
+
+---
+
+</details>
+
+<details>
 <summary>KDSRGAN: Knowledge Distillation Based Degradation Estimation for Blind Super-Resolution (02.2023)</summary>
 
 ---
