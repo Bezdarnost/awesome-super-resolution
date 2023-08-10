@@ -71,6 +71,74 @@
 </details>
 
 <details>
+<summary>Omni-SR: Omni-Dimension Feature Aggregation for Lightweight Image Super-Resolution (04.2023)</summary>
+
+---
+
+**Date of Introduction:**
+
+- April 2023
+
+**Conference/Publication:**
+
+- CVPR 2023
+
+**Authors:**
+
+- Not explicitly mentioned in the provided chunks, but typically available on the paper's title page.
+
+**Abstract/Description:**
+
+- The paper introduces the Efficient Non-Local Contrastive Attention (ENLCA) for Single Image Super-Resolution (SISR). The primary challenge addressed is the limitation of Non-Local Attention (NLA) in SISR, which often gives noisy information significant weights and consumes quadratic computational resources. The proposed ENLCA aims to perform long-range visual modeling and leverage more relevant non-local features efficiently. The method consists of two parts: Efficient Non-Local Attention (ENLA) and Sparse Aggregation. ENLA uses a kernel method to approximate the exponential function, achieving linear computational complexity. Sparse Aggregation focuses on informative features, and contrastive learning is applied to further distinguish between relevant and irrelevant features. The proposed architecture, called Efficient Non-Local Contrastive Network (ENLCN), demonstrates superior performance over state-of-the-art methods in SISR.
+
+**Main Concepts:**
+
+- The paper introduces the Omni Self-Attention (OSA) block based on the dense interaction principle, which can simultaneously model pixel-interaction from both spatial and channel dimensions, mining potential correlations across omni-axis (i.e., spatial and channel).
+- The paper also presents the Omni-Scale Aggregation Group (OSAG), a multi-scale hierarchical aggregation block designed to achieve tailored encoding of varying scales of texture patterns.
+
+**Architecture & Methods:**
+
+- Omni Self-Attention (OSA): A novel omni-dimension feature aggregation scheme that exploits both spatial and channel axis information simultaneously, offering higher-order receptive field information.
+- Omni-Scale Aggregation Group (OSAG): A multi-scale hierarchical aggregation block that builds three cascaded aggregators: local convolution, meso self-attention, and global self-attention, rendering an omni-scale feature extraction capability.
+
+**Training Details:**
+
+- Not explicitly mentioned in the provided chunks, but typically available in the paper's methodology section.
+
+**Metrics:**
+
+- Not explicitly mentioned in the provided chunks, but typically available in the paper's results section.
+
+**Datasets:**
+
+- Not explicitly mentioned in the provided chunks, but typically available in the paper's methodology section.
+
+**Results & Achievements:**
+- The proposed Omni-SR framework exhibits superior restoration performance, covering a larger interaction range while maintaining an attractive model size of 792K.
+
+**Code/Implementation:**
+
+- The source code is available at [Omni-SR GitHub Repository](https://github.com/Francis0625/Omni-SR).
+
+**References:**
+
+- [paper](https://arxiv.org/pdf/2304.10244.pdf)
+- [github](https://github.com/Francis0625/Omni-SR)
+
+```
+@inproceedings{omni_sr,
+  title      = {Omni Aggregation Networks for Lightweight Image Super-Resolution},
+  author     = {Wang, Hang and Chen, Xuanhong and Ni, Bingbing and Liu, Yutian and Liu jinfan},
+  booktitle  = {Conference on Computer Vision and Pattern Recognition},
+  year       = {2023}
+}
+```
+
+---
+
+</details>
+
+<details>
 <summary>DiffIR: An Efficient Diffusion Model for Image Restoration (03.2023)</summary>
 
 ---
