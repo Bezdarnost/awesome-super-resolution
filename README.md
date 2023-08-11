@@ -1,4 +1,4 @@
-# Awesome Super-Resolution
+# Awesome Super Resolution
 Welcome to the awesome-super-resolution repository! This is a curated collection of resources, insights, and tools dedicated to the field of Super-Resolution. Super-Resolution focuses on enhancing the quality of images and videos, making them sharper, clearer, and more detailed.
 
 **In this repository, you'll find:**
