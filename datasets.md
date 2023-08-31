@@ -184,6 +184,37 @@
 </details>
 
 <details>
+<summary>Video Super-Resolution</summary>
+
+  
+</details>
+
+<details>
+<summary>Multi-Frame Super-Resolution</summary>
+  
+</details>
+
+<details>
+<summary>Reference-based Super-Resolution</summary>
+  
+</details>
+
+<details>
+<summary>Depth Map Super-Resolution</summary>
+  
+</details>
+
+<details>
+<summary>Reference-based Video Super-Resolution</summary>
+  
+</details>
+
+<details>
+<summary>3D Object Super-Resolution</summary>
+  
+</details>
+
+<details>
 <summary>Other</summary>
 
 <details>
