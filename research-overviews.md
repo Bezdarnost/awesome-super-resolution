@@ -296,6 +296,15 @@ The research leverages two datasets for empirical validation:
 
 
 <details>
+<summary>Swin2SR</summary>
+https://github.com/mv-lab/swin2sr
+</details>
+
+
+
+
+
+<details>
 <summary>SCUNet: Practical Blind Denoising via Swin-Conv-UNet and Data Synthesis (03.2022)</summary>
 
 ---
